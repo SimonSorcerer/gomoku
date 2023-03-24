@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.piece {
+    margin: 0 4px;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 6px solid darkcyan;
+    box-sizing: border-box;
+}
+
+.cross {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.cross::before,
+.cross::after {
+    content: '';
+    position: absolute;
+    background-color: indianred;
+}
+
+.cross::before {
+    left: 50%;
+    width: 6px;
+    margin-left: -3px;
+    height: 100%;
+}
+
+.cross::after {
+    top: 50%;
+    height: 6px;
+    margin-top: -3px;
+    width: 100%;
+}

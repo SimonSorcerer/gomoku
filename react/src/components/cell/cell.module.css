@@ -1,0 +1,45 @@
+.wrapper {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 9px solid darkcyan;
+    box-sizing: border-box;
+}
+
+.cross {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.cross::before,
+.cross::after {
+    content: '';
+    position: absolute;
+    background-color: indianred;
+}
+
+.cross::before {
+    left: 50%;
+    width: 10px;
+    margin-left: -5px;
+    height: 100%;
+}
+
+.cross::after {
+    top: 50%;
+    height: 10px;
+    margin-top: -5px;
+    width: 100%;
+}

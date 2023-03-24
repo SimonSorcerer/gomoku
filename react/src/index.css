@@ -1,0 +1,11 @@
+#root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    font-size: 16pt;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
