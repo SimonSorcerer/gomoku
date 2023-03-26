@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.highlight {
+    background-color: yellow;
+}
+
 .circle {
     width: 35px;
     height: 35px;
